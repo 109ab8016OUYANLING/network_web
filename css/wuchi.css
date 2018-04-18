@@ -1,0 +1,155 @@
+/*......................................totalproduct...............................................*/
+
+.cshowproduct{
+	width:1000px;
+	margin:0 auto;
+}
+.cshowproduct ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.cli{
+	
+	
+}
+.cli img{
+	 width:200px;
+	 height:200px; 
+}
+
+.cli button{
+	
+	background-color:#FFF;
+	
+}
+.cli ul{
+	
+	width:200px;
+	margin:0 auto;
+}
+
+
+
+
+/*......................................totalproduct...............................................*/
+
+/*......................................product...............................................*/
+#product{
+
+width:1000px;
+margin:0 auto;
+
+text-align:center;
+}
+#product .proleft{
+    padding-left:0px;
+list-style: none;
+
+}
+#product ul .nochan {
+		display: inline-block;
+		 
+		  margin:20px 24px 20px 24px ;
+			
+}
+#product ul li a {
+		font-family: Arial, Helvetica, sans-serif;
+	    text-decoration: none;
+		display: block;
+		border:1px solid #FFFFFF ;
+		text-align:center;
+			
+}
+#product a li.col{
+
+    color:#000000;
+
+}
+#product a li.coll{
+  color:#fb5113;
+}
+#product a:hover {
+	
+	border:1px solid #cdff80 ;
+	text-decoration: none;
+}
+
+#product a li input.txt1{
+
+	    font-size: 16px; 
+		font-family: Arial, Helvetica, sans-serif;
+	    color: white;
+        background-color: #72b173;
+		width:100px;
+		height:40px;
+		border:2px blue none;
+}
+#product a li input:hover {
+	background: #3f7d40;
+	cursor: pointer;
+	text-decoration: none;
+}
+#product button{
+	background-color:#FFF;
+}
+#product ul li a img{
+	
+		width: 200px;
+		height: 240px;
+}
+
+ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+/*......................................product...............................................*/
+
+/*......................................shopcar...............................................*/
+
+.ccar{
+	width:1000px;
+	margin:0 auto;
+}
+
+.ctable{
+	width:100%;
+	border:1px black solid ;
+}
+
+.ctr th, td{
+	border:1px black solid ;
+	font-size:30px;
+}
+
+
+
+
+.inde{
+	background-color:#FFF;
+	padding:0;
+	width:80%;
+	border:0px ;
+}
+
+
+
+
+
+
+
+#board{
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+/*......................................shopcar...............................................*/

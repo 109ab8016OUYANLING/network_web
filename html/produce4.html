@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>produce</title>
+ <link rel="stylesheet" href="../css/style.css">
+ <link href="../css/star.css" type="text/css" rel="stylesheet"/>
+<style>
+#starttwo .star_score { background:url(../img/starky.png);}
+#starttwo .star_score a:hover{ background:url(../img/starsy.png);left:0;}
+#starttwo .star_score a.clibg{ background:url(../img/starsy.png);left:0;}
+</style>	
+ 
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+  $("#quantity").keyup(function(){
+    if(isNaN($(this).val())||parseInt($(this).val())<1){
+      $(this).val("1");
+      $("#totalPrice").html($("#price").val());
+      return;
+    }
+    var total=parseFloat($("#price").val())*parseInt($(this).val());
+    $("#totalPrice").html(total.toFixed(2));
+  })
+   
+  $("#add").click(function(){
+     numAdd();
+  });
+   
+  $("#del").click(function(){
+    numDec();
+  });
+})
+/*商品數量+1*/
+function numAdd(){
+  var num_add = parseInt($("#quantity").val())+1;
+  if($("#quantity").val()==""){
+    num_add = 1;
+  }
+  $("#quantity").val(num_add);
+  var total = parseFloat($("#price").val())*parseInt($("#quantity").val());
+  $("#totalPrice").html(total.toFixed(2));
+}
+/*商品數量-1*/
+function numDec(){
+  var num_dec = parseInt($("#quantity").val())-1;
+  if(num_dec<1){
+    //購買數量必須大於或等於1
+    alert("數量要大於1");
+  }
+  else{
+    $("#quantity").val(num_dec);
+    var total = parseFloat($("#price").val())*parseInt($("#quantity").val());
+    $("#totalPrice").html(total.toFixed(2));
+  }
+}
+/* 星星評分  */
+
+
+</script>
+
+</head>
+<body>
+<div id="header">
+				
+<header>
+<div>			
+	<ul class="block">
+        <li ><a href="../html/user.html"> 會員登入</a> </li>
+        <li >｜</li>
+        <li><a href="../html/register.html">  加入會員</a></li>
+        <li >｜</li>
+        <li >訂單查詢</li>
+        <li >｜</li>
+        <li ><a href="../html/introduce.html">會員中心</a></li>
+        <li >｜</li>
+        <li ><a href="../html/shopcar.html"><img src="../img/0002.png" width="50" height="50"></a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input  type="text" id="tb_keyword" />&nbsp&nbsp
+    <img src="../img/0003.png" width="35" height="35" ></div>
+    
+      <nav>
+        <ul class="asdy">
+          <li><a href="../html/index.html">主頁</a></li>
+          <li><a href="../html/aboutus.html">關於我們</a></li>
+          <li><a href="../html/totalproduce.html">探索麵包</a></li>
+          <li><a href="">購物清單</a></li>
+        </ul>
+      </nav>
+   
+    </header>
+</div>
+    
+<hr>
+<section id="close">
+<div class="pawn">
+<img src="../img/005.png" width="300" height="300">
+</div>
+<div class="insidein">
+<h1 class="pawnname">芒果乳酪麵包</h1>
+<p class="pawnindtroce">
+  
+  </span><span>以天然酵母發酵的歐式麵糰中，<br />
+  </span><span>裹入台灣在地食材—愛文芒果，</span><span lang="EN-US" style="color: #666666; mso-font-kerning: 0pt"><br />
+
+  </span><span>歷經白酒浸漬24小時以上的芒果乾，<br /></span>
+  <span>為鮮甜果香增添獨特韻味；<br /></span>
+   <span>細細品嚐，深刻感受到豐富層次口感。<br /></span>
+  <br />
+  </span><span style="color: #ff8c00"><strong>保存及食用方式<br />
+  </strong></span><span >為保新鮮，</span><span lang="EN-US" style="color: #666666; mso-font-kerning: 0pt">Pasadena </span><span>全程以冷藏宅配；<br />
+  </span><span >收到後您可取所需份量，放置於室溫下後直接食用、<br />
+  或是以烤箱回烤後食用。<br />
+  </span><span >其餘麵包建議盡快放入冷凍保存，以避免水分的流失；<br />
+  </span><span >每次食用再取用所需份量退冰，<br />
+  回烤前請先於麵包上噴一些水以避免過乾，<br />
+  </span></span><span>放入烤箱以</span><span lang="EN-US" style="color: #666666; mso-font-kerning: 0pt">180</span><span >度烘烤</span><span lang="EN-US" style="color: #666666; mso-font-kerning: 0pt">3</span><span>分鐘左右。<br />
+  </span></span></span><span>不建議使用微波，可能會使麵包過乾失去風味。</span></span></span></p>
+
+<div class="pawnnum">
+
+
+
+<h2 class="price">售價 $95</h2>
+
+ <!--加减s-->
+ <input class="min"  id="del" type="button" value="-" style="padding:0 5px;"/>
+ <input  type="text" id="quantity"  size="5" maxlength="5" class="text_box" />
+ <input class="add" id="add" type="button" value="+" style="padding:0 3px;"/><br><br>
+ <!--加减e-->
+ <!--<p class="sdsd">
+  總價格:<span id="totalPrice">28.10</span>
+</p>
+
+<input type="hidden" value="28.1" id="price" />-->
+<input id="btn_buy" class="pawnbutton" type="button" value="立刻購買" onclick="return buy_click();" />
+
+<input id="btn_buy" class="pawnbutton" type="button" value="放入購物車" onclick="return buy_click();" /><br>
+
+<div class="wrapper">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+    <p></p>
+</div>
+<div class="inside">
+                      <p class="score"> 商品評分</p>
+                  <div id="starttwo">
+
+                    <div class="star_score"></div>
+                  </div>
+                  <script type="text/javascript" src="../js/startScore.js"></script>
+                  <script>
+                    scoreFun($("#startone"))
+                    scoreFun($("#starttwo"),{
+                    fen_d:22,//每一個a的寬度
+                    ScoreGrade:5//a的個数 
+                    })
+                  </script>
+                </div> 
+                </div>
+</section>
+      
+
+<hr>	
+<div id="footer">
+			<section class="contact">
+				<header>	
+					<h3>聯絡資訊</3>
+				</header>
+				<p>
+					桃園市中壢區中北路200號<br>
+					(03)2659999
+				</p>
+			</section>
+			<section class="dp">
+				<ul class="icons">
+					<li><a href="" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<div class="copyright">
+					版權所有 &copy; 拷貝一定吉
+				</div>
+</html>

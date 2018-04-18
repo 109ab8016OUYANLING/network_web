@@ -1,0 +1,141 @@
+*{
+	  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	/*border:1px solid;*/
+	   margin: 0;
+    padding: 0;
+	font-family: 'Raleway', sans-serif, "微軟正黑體";
+}
+#wrap{
+	color:white;
+}
+body{
+	background-color: #54364a;
+    background-size: cover;
+    background-image: url(../images/BEB2.jpg);
+	
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+/*........................header.......................*/
+
+#header{
+	width:100%;
+	height:60px;
+	background-color: rgba(0, 0, 0, 0.20);
+	border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.headleft{
+	display: inline-block;
+	width:15%;
+	height:60px;
+	text-align:center;
+	background-color: rgba(0,0,0,0.5);
+	border-right: 1px solid rgba(255,255,255, 0.2);
+}
+.headleft p{
+	font-size:36px;
+	height:60px;
+	display:flex;
+	-webkit-align-items: center;
+     align-items: center;
+	-webkit-justify-content: center;
+     justify-content: center;
+}
+.headright{
+	text-align:center;
+	margin:0 auto;
+	float:right;
+	width:85%;
+	height:60px;
+}
+.headright ul{
+	height:60px;
+	width:30%;
+	float:right;
+	display:flex;
+		-webkit-align-items: center;
+     align-items: center;
+	-webkit-justify-content: center;
+     justify-content: center;
+	 
+}
+.headright li{
+	display:inline;
+	width:25%;
+	height:30px;
+
+}
+.headright a{
+
+}
+.headright li:hover{
+	background-color: rgba(0, 0, 0, 0.30);
+}
+ul {
+	padding:0px;
+	list-style: none;
+}
+
+/*........................header.......................*/
+
+
+
+/*........................leftbar.......................*/
+
+
+#leftbar{
+	width:15%;
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.20);
+    color: #FFF;
+	margin:0 ;
+	padding:0;
+	float:left;
+	
+border-right: 1px solid rgba(255,255,255, 0.2);
+
+}
+.leftmenu ul li{
+	padding-left:10px;
+	display:flex;
+	-webkit-align-items: center;
+    align-items: center;
+	height:50px;
+	border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+.left_li_center:hover{
+		background-color: rgba(0, 0, 0, 0.30);
+}
+.leftmenu ul li:hover{
+
+}
+.left_sub_menu{
+	display:inline;
+	width:100px;
+	
+}
+/*........................leftbar.......................*/
+
+
+
+/*........................content.......................*/
+
+#content{
+	display:inline-block;
+	width:85%;
+	padding:20px;
+	float:right;
+	height:100%;
+    overflow-y: visible;
+	border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.pagetitle{
+	height:60px;
+}
+/*........................content.......................*/

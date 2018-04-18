@@ -1,0 +1,7 @@
+.star_score { background:url(../img/stark2.png); width:160px; height:21px;  position:relative; }
+.star_score a{ height:21px; display:block; text-indent:-999em; position:absolute;left:0;}
+.star_score a:hover{ background:url(../img/stars2.png);left:0;}
+.star_score a.clibg{ background:url(../img/stars2.png);left:0;}
+#starttwo .star_score { background:url(../img/starky.png);}
+#starttwo .star_score a:hover{ background:url(../img/starsy.png);left:0;}
+#starttwo .star_score a.clibg{ background:url(../img/starsy.png);left:0;}

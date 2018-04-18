@@ -1,0 +1,31 @@
+/* line 1, ../sass/record.scss */
+#record {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
+  margin-left: 30%;
+  border: 1px solid black;
+}
+
+/* line 9, ../sass/record.scss */
+.aa {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+  margin: auto;
+}
+/* line 15, ../sass/record.scss */
+.aa ul {
+  list-style-type: none;
+  text-align: center;
+}
+/* line 18, ../sass/record.scss */
+.aa ul > li {
+  text-align: center;
+}
+/* line 22, ../sass/record.scss */
+.aa a {
+  text-decoration: none;
+}

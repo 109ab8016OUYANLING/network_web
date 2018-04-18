@@ -1,0 +1,1016 @@
+* {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px solid;*/
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Raleway', sans-serif, "微軟正黑體";
+    /*font-family: "opensansregular", Arial, Helvetica, sans-serif,"微軟正黑體";*/
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+}
+
+#img_wrapp {
+    background-image: url("../image/wu0 g3.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.enter_1{
+	width: 100%;
+	position: absolute;
+    top: 80%;
+	text-align:center;
+}
+.enter_2 a{
+	color:#000000;
+	text-decoration: none;
+	transition: color 1s;
+}
+.enter_2 a:hover{
+	
+	color:#FFFFFF;
+	text-decoration: none;
+}
+.enter_2 a:active{
+	color:red;
+	text-decoration: none;
+}
+.header .header_top {
+    height: 50px;
+    background-color: #FFB400;
+    box-shadow: 0 2px #F49F0C;
+}
+
+.header .header_middle {
+    height: 180px;
+}
+
+.header .header_middle svg#logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header .header_middle .logo_name {
+    top: 65%;
+    text-align: center;
+    color: black;
+}
+
+.header .header_nav {
+    height: 50px;
+    text-align: center;
+}
+
+
+/*.header .header_nav ul li.active a {
+  color: #63CAC6;
+  border-color: #63CAC6;
+}*/
+
+.menu {
+    width: 100%;
+    background-color: white;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.menu-item {
+    height: 50px;
+    padding: 15px;
+    background: white;
+    border: solid;
+    border-width: 1px 0 0 0;
+}
+
+.menu-item:hover {
+    border-color: #FF810C;
+}
+
+#coo_1_pos,
+#coo_2_pos {
+    position: absolute;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    top: -50px;
+}
+
+.focus {
+    color: #FF810C !important;
+}
+
+.item_border {
+    border-color: #FF810C;
+}
+
+.header .header_nav ul li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+.header .header_nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 0.2s;
+    letter-spacing: 2px;
+}
+
+.header .header_nav ul li:hover a {
+    color: #FF810C;
+}
+
+
+/*................................................................................................*/
+
+.home {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.home .slide_img {
+    height: 500px;
+    background-image: url("../image/IMG_3083.JPG");
+    background-size: cover;
+}
+
+.home h2.gold {
+    text-align: center;
+    line-height: 80px;
+}
+
+.home .infos {
+    /*width: 800px;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .infos .intro {
+    width: calc(100% / 3 - 2%);
+    height: 300px;
+    text-align: center;
+}
+
+.home .infos .intro .home_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.home .infos .intro .img1 {
+    background-image: url("../image/svg/school.svg");
+}
+
+.home .infos .intro .img2 {
+    background-image: url("../image/svg/pregnant.svg");
+}
+
+.home .infos .intro .img3 {
+    background-image: url("../image/svg/school.svg");
+}
+
+.infos_text_intro {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+
+/*................................................................................................*/
+
+#origin_wrapp {
+    width: 100%;
+    /*height: 400px;*/
+}
+
+.origin_name {
+    text-align: center;
+    line-height: 60px;
+}
+
+.origin_img {
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/天.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.origin_img_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.origin_img_text_p {
+    line-height: 60px;
+    color: #5B5B5B;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*................................................................................................*/
+
+.member_wrapp {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.member_wrapp .member_intor {
+    text-align: center;
+    line-height: 60px;
+}
+
+.member_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member_wrapp .row .member {
+    width: 250px;
+    height: 300px;
+    width: calc(100% / 3 - 2%);
+}
+
+.member_wrapp .row .member .headerpic {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.member_wrapp .row .member .pic1 {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/17883818_1200503613382243_4427122812219273369_n.jpg?oh=dc0ba7bc16fa56419be903946a8a3f9c&oe=5980A680");
+}
+
+.member_wrapp .row .member .pic2 {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t31.0-8/s960x960/17191916_1506389036052592_3518055291995883964_o.jpg?oh=37809ea3d725942bf81381c50601b9ed&oe=59769DD1");
+}
+
+.member_wrapp .row .member .pic3 {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/1010390_599779870102071_2000544591_n.jpg?oh=6364605eb5338f229a3892790c71ce18&oe=59841DEB");
+}
+
+.member_wrapp .row .member .pic4 {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/13895476_934325340006686_3500089267917458431_n.jpg?oh=e74d6449e7c00309e773fbd31054245c&oe=598D454C");
+}
+
+.member_wrapp .row .member .pic5 {
+    background-image: url("../image/headpic4.jpg");
+}
+
+.member_wrapp .row .member .pic6 {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/3481_1038306592859439_3576680548940854691_n.jpg?oh=835fd9a50d2411065fd753e50fded4b7&oe=59BCCEA4");
+}
+
+.member_wrapp .row .member_infos {
+    width: 200px;
+    display: inline_block;
+    text-align: center;
+    margin-top: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*................................................................................................*/
+
+.build_wrapp {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.build_wrapp .build_intor {
+    text-align: center;
+    line-height: 60px;
+}
+
+.build_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.build_wrapp .row .build {
+    width: calc(100% / 3 - 10%);
+}
+
+.build_wrapp .row .build:hover .fa {
+    color: #003C68;
+    border-color: #003C68;
+    border-top-color: #003c68;
+    border-right-color: #003c68;
+    border-bottom-color: #003c68;
+    border-left-color: #003c68;
+    transform: rotate(360deg);
+}
+
+.fa-handshake-o {
+    top: 10px;
+    left: 3px;
+}
+
+.fa-heart-o {
+    top: 5px;
+    left: 1px;
+}
+
+.fa-spinner {
+    top: 8px;
+    left: 8px;
+}
+
+.build_wrapp .row .build:hover .build_top .build_circle:after {
+    background-color: #003C68;
+}
+
+.build_wrapp .row .build .build_top {
+    height: 180px;
+}
+
+.build_wrapp .row .build .build_top .build_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: #003C68;
+    border: 8px solid;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*before是大圓和小圓的橋樑*/
+
+.build_wrapp .row .build .build_top .build_circle:before {
+    width: 10px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 109%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D7D7D7;
+    content: "";
+}
+
+
+/*after是小圓*/
+
+.build_wrapp .row .build .build_top .build_circle:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 126%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D7D7D7;
+    content: "";
+}
+
+.build_wrapp .row .build .build_top .build_circle .fa {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 10%;
+    transition: transform 500ms ease-in-out;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.build_wrapp .row .build .build_middle {
+    height: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.build_wrapp .row .build .build_bottom {
+    /*background-color: pink;*/
+}
+
+.build_wrapp .row .build .build_bottom .build_bottom_p {
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/*................................................................................................*/
+
+.cooperative_wrapp {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.cooperative_wrapp .cooperative_intor {
+    text-align: center;
+    line-height: 60px;
+}
+
+.cooperative_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cooperative_wrapp .row .coo_company {
+    width: calc(100% / 4 - 8%);
+    height: 220px;
+    text-align: center;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon1 {
+    background-image: url("../image/coo_icon1.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon2 {
+    background-image: url("../image/coo_icon2.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon3 {
+    background-image: url("../image/icon3.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon4 {
+    background-image: url("../image/coo_icon4.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+
+/*.cooperative_wrapp .row .coo_company .coo_icon:hover {
+    background-color: #003C68;
+    cursor: pointer ;
+}*/
+
+.cooperative_wrapp .row .coo_company .coo_icon1:hover {
+    background-color: #EF4A4A;
+    cursor: pointer;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon2:hover {
+    background-color: #F2921D;
+    cursor: pointer;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon3:hover {
+    background-color: #95D870;
+    cursor: pointer;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon4:hover {
+    background-color: #FFDE28;
+    cursor: pointer;
+}
+
+
+/*before為倒三角形*/
+
+.cooperative_wrapp .row .coo_company .coo_icon:before {
+    border-color: #f7f7f7 transparent transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 30px;
+    /*width: 0px;
+    height: 0px;*/
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+    transition-duration: 0.3s;
+    opacity: 0;
+    content: "";
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon1:hover:before {
+    border-color: #EF4A4A transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon2:hover:before {
+    border-color: #F2921D transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon3:hover:before {
+    border-color: #95D870 transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon4:hover:before {
+    border-color: #FFDE28 transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_name {
+    top: 75%;
+    letter-spacing: 2px;
+}
+
+
+/*................................................................................................*/
+
+.foundation_wrapp {
+    background-color: #fff;
+    /*height: 550px;*/
+}
+
+
+/*.foundation_wrapp .foundation_name*/
+
+.foundation_name {
+    text-align: center;
+    line-height: 60px;
+    color: #EF4A4A;
+}
+
+.foundation_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+}
+
+.foundation_wrapp .row .foundation_img {
+    width: 30%;
+    height: 370px;
+    margin-top: 5%;
+    background-image: url("https://lecoin.cc/Medias/Groups/Logo/2ab231a47b6b48a68693cb574380c790.jpg");
+    background-size: cover;
+    border-radius: 4px;
+}
+
+
+/*.foundation_wrapp .row .cooperative_foundation_intor {*/
+
+.cooperative_foundation_intor {
+    width: 40%;
+    /*height: 300px;*/
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/*.foundation_wrapp .row .foundation_intor .cooperative_text_intor {*/
+
+.cooperative_text_intor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 22px;
+    color: #0F0F0F;
+}
+
+
+/*................................................................................................*/
+
+.angelcake_wrapp {
+    background-color: #f7f7f7;
+	
+}
+
+.angelcake_wrapp .angelcake_name {
+    text-align: center;
+    line-height: 60px;
+    color: #F2921D;
+}
+
+.angelcake_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+}
+
+.angelcake_wrapp .row .cooperative_angelcake_intor {
+    width: 40%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.angelcake_wrapp .row .cooperative_angelcake_intor .cooperative__text_intor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.angelcake_wrapp .row .angelcake_img {
+    width: 35%;
+    height: 370px;
+    margin-top: 5%;
+    background-image: url("../image/IMG_5822.JPG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+}
+
+
+/*................................................................................................*/
+
+#cyim {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: #fff;
+}
+
+.cycu_name {
+    color: #95D870;
+    text-align: center;
+    line-height: 60px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#cyim .row {
+    display: flex;
+    justify-content: space-around;
+    height: 550px;
+}
+
+
+/*.Chead {
+    text-align: center;
+    line-height: 60px;
+}*/
+
+.Cleft {
+    width: 380px;
+    margin-top: 5%;
+}
+
+.Cright {
+    margin-top: 5%;
+}
+
+.Cright ul {
+    width: 400px;
+}
+
+.Cleft img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 380px;
+}
+
+
+/*................................................................................................*/
+
+.product_wrapp .product_name {
+    text-align: center;
+    line-height: 60px;
+}
+
+.product_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+}
+
+.product_wrapp .row .product_infos {
+    height: 500px;
+    margin-top: 15%;
+    width: calc(100% / 3 - 1%);
+    display: flex;
+    flex-direction: column;
+}
+
+.product_wrapp .row .product_infos .product_detail {
+    width: 100%;
+    height: calc( 100% / 3 - 2%);
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailL_infos {
+    width: 75%;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailL_infos .product_detailL_top {
+    text-align: right;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailL_infos .product_detailL_top {
+    margin-bottom: 10px;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailL_img {
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailR_img {
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailR_infos {
+    display: inline-block;
+    width: 75%;
+    margin-top: 5%;
+    float: right;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailR_infos .product_detailR_top,
+.product_wrapp .row .product_infos .product_detail .product_detailR_infos .product_detailR_bottom {
+    text-align: left;
+}
+
+.product_wrapp .row .product_infos .product_detail .product_detailR_infos .product_detailR_top {
+    margin-bottom: 10px;
+}
+
+.product_wrapp .row .product_img {
+    height: 600px;
+    top: -15%;
+    background-size: conver;
+}
+
+.product_wrapp .row .product_img .product_img_top {
+    width: 90%;
+    height: 25%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-image: url("../image/svg/product_img-02.svg");
+    background-size: contain;
+}
+
+.product_wrapp .row .product_img .product_img_bottom {
+    width: 100%;
+    height: 460px;
+    background-image: url("../image/IMG_2882.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 30px;
+}
+
+.product_wrapp .product_detail_img_circle {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.product_wrapp .L_pos_circle {
+    position: absolute;
+    right: 0;
+}
+
+.circle_pic1 {
+    background-image: url("../image/svg/pineapple.svg");
+}
+
+.circle_pic2 {
+    background-image: url("../image/svg/sprout.svg");
+}
+
+.circle_pic3 {
+    background-image: url("../image/svg/like.svg");
+    background-size: contain;
+}
+
+.circle_pic4 {
+    background-image: url("../image/svg/star.svg");
+}
+
+.circle_pic5 {
+    background-image: url("../image/svg/store.svg");
+    background-size: contain;
+}
+
+.circle_pic6 {
+    background-image: url("../image/svg/hearts.svg");
+    background-size: contain;
+}
+
+.product_detailL_bottom {
+    width: 72%;
+    float: right;
+    text-align: right;
+}
+
+.product_detailR_bottom {
+    width: 72%;
+    float: left;
+    text-align: left;
+}
+
+
+/*................................................................................................*/
+
+.online_wrapp {
+    height: 600px;
+}
+
+.online_wrapp .online_name {
+    text-align: center;
+    line-height: 60px;
+}
+
+.cake_title1 {
+    margin-top: 10px;
+}
+
+.cake_text {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+.o{
+
+
+	
+
+}
+.online_drop{
+    width: 100%;
+    height: 50px;
+    display: block;
+    right: 0;
+    top: 0;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(245,245,245,1) 100%);
+	font-size:24px;
+    cursor: pointer;
+}
+
+/*................................................................................................*/
+
+#abgneBlock {
+    width: 1400px;
+    height: 500px;
+
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+#abgneBlock ul.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 9999px;
+	margin: 0 auto;
+    height: 100%;
+}
+
+#abgneBlock ul.list li {
+    float: left;
+    width: 1400px;
+    height: 100%;
+}
+
+#abgneBlock .list img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#abgneBlock ul.playerControl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 14px;
+}
+
+#abgneBlock ul.playerControl li {
+    float: left;
+    width: 23px;
+    height: 14px;
+    cursor: pointer;
+    margin: 0px 2px;
+    background: url(http://demonstration.abgne.tw/jquery/0033/images/rect_ctrl.png) no-repeat 0 0;
+}
+
+#abgneBlock ul.playerControl li.current {
+    background-position: -23px 0;
+}
+
+
+/*................................................................................................*/
+
+#contact {
+    text-align: center;
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 40px;
+    -webkit-transition: height 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+}
+
+#contact:hover {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+.email {
+    width: 20%;
+    height: 30px;
+}
+
+.message {
+    width: 20%;
+    height: 120px;
+}
+
+.contacthiden li {
+    line-height: 50px;
+    text-align: center;
+}
+
+ul.drop-down-menu a {
+    /*background-color: #ef5c28;*/
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+ul.drop-down-menu a:hover {
+    /* 滑鼠滑入按鈕變色*/
+    background-color: #FFB400;
+    color: #fff;
+}
+
+.contacthiden {
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+ul.drop-down-menu li:hover>ul {
+    /* 滑鼠滑入展開次選單*/
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+.submit {
+    width: 100px;
+    height: 30px;
+}

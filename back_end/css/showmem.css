@@ -1,0 +1,37 @@
+*{
+	  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	/*border:1px solid;*/
+	   margin: 0;
+    padding: 0;
+	font-family: 'Raleway', sans-serif, "微軟正黑體";
+}
+.showsearch{
+	height:60px;
+}
+.showtable{
+	
+	width:100%;
+	color: #FFF;
+}
+.showall table, td{
+	border:1px solid;
+	border-color:rgba(0, 0, 0, 0.30);
+}
+
+.showtrbg{
+	
+	background-color: rgba(84, 36, 21, 0.80);
+}
+.showtrgray{
+	
+	background-color: rgba(181, 3, 74, 0.80);
+}
+.showtrbg2{
+	background-color: rgba(238, 99, 82, 0.80);
+	
+}
+.godlike{
+	width:100%;
+}
